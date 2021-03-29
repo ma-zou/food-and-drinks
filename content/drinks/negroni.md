@@ -6,6 +6,6 @@ description: Der Negroni ist ein klassischer, aus Italien stammender Cocktail
   Association in der Kategorie Pre-Dinner Cocktail (Aperitif) aufgeführt.
 cover: /img/negroni.jpg
 ---
-- 4cl Gin
-- 4cl roter Wermut
-- 4cl Campari
+- **4cl** Gin
+- **4cl** roter Wermut
+- **4cl** Campari

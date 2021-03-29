@@ -28,12 +28,24 @@ h1 {
   white-space: nowrap;
 }
 
+h6 {
+  font-family: "Playfair Display";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 16px;
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
 .content .ingredients {
   margin-top: 80px;
   background: #2c2c2c;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 24px;
   line-height: 40px;
   padding: 60px 70px 60px 0;
@@ -49,7 +61,7 @@ h1 {
   position: absolute;
   content: "";
   background: #2c2c2c;
-  width: 25vw;
+  width: 50vw;
 }
 
 .desc {
@@ -101,9 +113,12 @@ h1 {
 }
 
 .selectionNavi li {
+  list-style: none;
+}
+
+.selectionNavi:not(.big) li {
   max-width: calc(33% - 33.3px);
   margin-right: 50px;
-  list-style: none;
 }
 
 
@@ -123,6 +138,11 @@ h1 {
   padding-right: 70px;
   display: block;
 }
+
+.selectionNavi:not(.big) .btn {
+  padding-right: 0px;
+}
+
 .selectionNavi .btn .text {
   font-family: Playfair Display;
   font-style: normal;
@@ -152,7 +172,7 @@ h1 {
 }
 
 .selectionNavi .btn img {
- height: 380px;
+ height: 460px;
 }
 .selectionNavi .btn video {
   height: 630px;

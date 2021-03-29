@@ -1,5 +1,5 @@
-site_url: https://ntn-boilerplate.netlify.app/
-logo_url: https://ntn-boilerplate.netlify.app/icon.png
+site_url: https://zoudliks-recipies.netlify.app/
+logo_url: https://zoudliks-recipies.netlify.app/icon.png
 
 # publish_mode: editorial_workflow
 backend:
@@ -43,8 +43,15 @@ collections:
       - {
           label: 'Drink category',
           name: 'category',
-          default: 'bitter',
-          options: [{ label: 'Bitter', value: 'bitter' }, { label: 'Sweet', value: 'sweet' }],
+          widget: 'select',
+          multiple: true,
+          options: [
+            { label: 'Bitter', value: 'bitter' },
+            { label: 'Süß', value: 'suess' },
+            { label: 'Fruchtig', value: 'fruchtig' },
+            { label: 'Stark', value: 'stark' },
+            { label: 'Sommerlich', value: 'Sommerlich' },
+          ]
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
@@ -62,8 +69,21 @@ collections:
       - {
           label: 'Meal category',
           name: 'category',
-          default: 'main',
-          options: [{ label: 'Main Dish', value: 'main' }, { label: 'Side Dish', value: 'side' }],
+          widget: 'select',
+          multiple: true,
+          options: [
+            { label: 'Hauptgericht', value: 'hauptgericht' },
+            { label: 'Beilage', value: 'beilage' },
+            { label: 'Süßes', value: 'suesses' },
+            { label: 'Frühstück', value: 'fruehstueck' },
+            { label: 'Abendessen', value: 'abendessen' },
+            { label: 'Salat', value: 'salat' },
+            { label: 'Suppe', value: 'suppe' },
+            { label: 'Basics', value: 'basics' },
+            { label: 'Snack', value: 'snack' },
+            { label: 'Dressing', value: 'dressing' },
+            { label: 'Soße', value: 'sosse' },
+          ]
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }

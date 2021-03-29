@@ -10,20 +10,9 @@
       >
         <span class="text">{{ post.title }}</span>
         <img v-if="post.cover" :src="post.cover">
-      	<span class="ingredients">
-
-          <span>Ingredients</span>
-        </span>
       </nuxt-link>
     </li>
   </ul>
-  <div v-else-if="loading" class="cards">
-    <div v-for="placeholder in placeholderClasses" :key="placeholder.id" class="card">
-      <content-placeholders :rounded="true" :class="placeholder">
-        <content-placeholders-heading />
-      </content-placeholders>
-    </div>
-  </div>
   <p v-else class="max-w-5xl mx-auto">
     {{ amount > 1 ? 'Posts not found' : 'Post not found' }}
   </p>
@@ -55,7 +44,6 @@
     data() {
       return {
         posts: [],
-        loading: true,
       }
     },
     computed: {
@@ -65,9 +53,8 @@
       }
     },
     async mounted() {
-      this.loading = true;
       this.posts = await this.fetchPosts();
-      this.loading = false;
+      console.log( this.posts);
     },
     methods: {
       formatDate(dateString) {

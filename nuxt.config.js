@@ -38,11 +38,22 @@ export default {
       {
         rel: 'preload',
         as: 'style',
-        href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap',
+      },
+      {
+        rel: 'preload',
+        as: 'style',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;7&display=swap',
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap',
+        media: 'print',
+        onload: `this.media='all'`
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;7&display=swap',
         media: 'print',
         onload: `this.media='all'`
       }

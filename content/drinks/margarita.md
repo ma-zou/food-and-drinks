@@ -1,6 +1,7 @@
 ---
 category: sour
 title: Margarita
+cover: /img/margarita.jpg
 ---
 - 8cl Tequila
 - 4cl Cointreau

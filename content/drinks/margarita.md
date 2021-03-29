@@ -1,6 +1,8 @@
 ---
 category:
-  - sweet
+  - suess
+  - fruchtig
+  - Sommerlich
 title: Margarita
 cover: /img/margarita.jpg
 ---

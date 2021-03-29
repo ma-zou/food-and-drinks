@@ -1,5 +1,8 @@
 ---
-category: bitter
+category:
+  - bitter
+  - stark
+  - Sommerlich
 title: Negroni
 description: Der Negroni ist ein klassischer, aus Italien stammender Cocktail
   mit bitter-süßem Geschmack. Er wird von der International Bartenders

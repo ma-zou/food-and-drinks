@@ -88,6 +88,18 @@ p {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 40px;
+  }
+}
+
 .branding {
   margin-bottom: 100px;
   text-decoration: none;
@@ -122,14 +134,26 @@ p {
 }
 
 
+
+
 .selectionNavi:not(.big) li:nth-child(3n+3) {
   margin-right: 0;
 }
 .selectionNavi.big li {
   max-width: calc(50% - 50px);
 }
+
 .selectionNavi.big li:first-of-type {
   margin-right: 100px;
+}
+
+@media (max-width: 1000px) {
+  .selectionNavi.big li {
+    max-width: calc(50% - 20px);
+  }
+  .selectionNavi.big li:first-of-type {
+    margin-right: 40px;
+  }
 }
 
 .selectionNavi .btn {
@@ -194,4 +218,75 @@ p {
   left:0;
   bottom:4px;
   content: "";
+}
+
+@media (max-width: 1000px) {
+  .selectionNavi .btn {
+    padding-right: 50px;
+  }
+  .selectionNavi .btn .counter {
+    padding: 5px 10px;
+    font-size: 22px;
+  }
+  .selectionNavi .btn.overlay:after {
+    width: calc(100% - 50px);
+  }
+
+  .selectionNavi:not(.big) {
+    flex-flow: row wrap;
+  }
+  .selectionNavi:not(.big) li {
+    max-width: calc(50% - 25px);
+    margin-bottom: 20px;
+  }
+  .selectionNavi:not(.big) li:nth-child(3n+3) {
+    margin-right: 50px;
+  }
+  .selectionNavi:not(.big) li:nth-child(2n+2) {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .branding {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  .selectionNavi .btn .text {
+    font-size: 26px;
+    line-height: 1em;
+  }
+  .selectionNavi {
+    flex-direction: column;
+  }
+  .selectionNavi:not(.big) {
+    flex-direction: column;
+  }
+  .selectionNavi:not(.big) li {
+    max-width: 100%;
+  }
+  .selectionNavi:not(.big) li:nth-child(3n+3) {
+    margin-right: 0px;
+  }
+  .selectionNavi li {
+    max-width: 100%;
+  }
+  .selectionNavi.big li:first-of-type {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .selectionNavi:not(.big) li {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .selectionNavi .btn video {
+    max-height: calc(50vh - 135px)
+  }
+  .selectionNavi .btn.overlay:after {
+    max-height: calc(50vh - 135px)
+  }
+  .selectionNavi .btn .counter {
+    bottom: 4px;
+    width: 165px;
+  }
 }

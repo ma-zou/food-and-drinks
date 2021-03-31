@@ -268,7 +268,7 @@ p {
   .selectionNavi:not(.big) li:nth-child(3n+3) {
     margin-right: 0px;
   }
-  .selectionNavi li {
+  .selectionNavi.big li {
     max-width: 100%;
   }
   .selectionNavi.big li:first-of-type {

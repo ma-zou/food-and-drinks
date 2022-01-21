@@ -92,3 +92,4 @@ collections:
       - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
       - { label: 'Ingredients', name: 'body', widget: 'markdown', required: false }
       - { label: 'Infos', name: 'info', widget: 'markdown', required: false }
+      - { label: 'Amount' name: 'amount', widget: 'number', value_type: 'int', required: false}

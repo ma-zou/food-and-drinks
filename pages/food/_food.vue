@@ -4,7 +4,7 @@
      <section v-if="post">
       <article>
         <div class="content">
-          <h1 class="">{{ post.title }}</h1>
+          <h1 class="">{{ post.title }} <small>{{ amount }}</small></h1>
           <div class="col-1">
             <div v-if="post.cover" class="image">
               <img
@@ -40,6 +40,9 @@ export default {
   computed: {
     categories: function() {
       return this.post.category.join(' ꞏ ');
+    },
+    amount: function() {
+      return this.post.amount > 1 ? this.post.amount + ' Personen' : '1 Person';
     }
   }
 }

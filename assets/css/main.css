@@ -23,6 +23,13 @@ h1 {
   white-space: nowrap;
 }
 
+h1 small {
+  font-size: 18px;
+  font-family: 'Montserrat';
+  display: block;
+  font-weight: 400;
+}
+
 @media (min-width: 700px) {
   h1 {
     font-size: 60px;

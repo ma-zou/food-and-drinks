@@ -1,7 +1,8 @@
 ---
 category:
-  - sweets
+  - suesses
 title: Chocolate Cake
+cover: /img/d1074d58-56ab-493c-8a33-a225b25dfa9c.jpg
 ---
 - 300g Meh
 - 275g Zucker

@@ -1,5 +1,6 @@
 ---
-category: sweets
+category:
+  - sweets
 title: Chocolate Cake
 ---
 - 300g Meh

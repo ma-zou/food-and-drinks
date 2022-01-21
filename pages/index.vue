@@ -5,15 +5,19 @@
       <li>
         <nuxt-link class="btn overlay" to="/drinks">
           <span class="text">Drinks</span>
-          <video src="img/drinks.mp4" ref="drinks" loop muted autoplay></video>
-          <span class="counter">{{ drinks }} Drinks</span>
+          <div class="shadow">
+            <video src="img/drinks.mp4" ref="drinks" loop muted autoplay></video>
+            <span class="counter">{{ drinks }} Drinks</span>
+          </div>
         </nuxt-link>
       </li>
       <li>
         <nuxt-link class="btn overlay" to="/food">
           <span class="text">Food</span>
-          <video src="img/food.mp4" loop muted autoplay></video>
-          <span class="counter">{{ food }} Recipies</span>
+          <div class="shadow">
+            <video src="img/food.mp4" loop muted autoplay></video>
+            <span class="counter">{{ food }} Recipies</span>
+          </div>
         </nuxt-link>
       </li>
     </ul>

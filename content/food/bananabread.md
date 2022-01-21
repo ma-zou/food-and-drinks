@@ -1,7 +1,8 @@
 ---
 category:
-  - sweets
+  - suesses
 title: Bananabread
+cover: /img/banana-bread.jpg
 ---
 - 4 Bananen
 - 180g Mehl

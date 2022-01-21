@@ -11,57 +11,71 @@ article {
   display: flex;
 }
 
-.content {
-  width: 580px;
-  padding-right: 70px;
-}
-
 h1 {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 40px;
   line-height: 50px;
   color: #2c2c2c;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   margin-top: 50px;
   white-space: nowrap;
 }
 
+@media (min-width: 700px) {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 80px;
+  }
+}
+
 h6 {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-top: 16px;
+  padding-block: 20px;
+  margin-top: 25px;
+  border-block: solid 1px #2c2c2c;
 }
 
 p {
   font-family: 'Montserrat';
 }
 
+.content {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.content h1 {
+  margin-top: 0;
+  width: 100%;
+}
+
+.nuxt-content-container {
+  width: 100%;
+}
+
 .content .ingredients {
-  margin-top: 80px;
   background: #2c2c2c;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
+  width: calc(100% + 40px);
   font-size: 24px;
-  line-height: 40px;
-  padding: 60px 70px 60px 0;
+  line-height: 50px;
+  margin-inline: -20px;
+  padding: 40px 25px;
   color: #fff;
   position: relative;
-  margin-right: -70px;
 }
 
-.content .ingredients:before {
-  right: 100%;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: "";
-  background: #2c2c2c;
-  width: 50vw;
+.content .ingredients li {
+  list-style: none;
 }
 
 .desc {
@@ -70,11 +84,29 @@ p {
   font-weight: 300;
   font-size: 18px;
   line-height: 28px;
+  margin-block: 25px;
+}
+
+.info {
+  margin-block: 25px;
+  width: 100%;
+}
+
+.back {
+  font-family: 'Playfair Display';
+  color: #2c2c2c;
+  border-bottom: solid 1px #2c2c2c;
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .image {
-  width: calc(100% - 510px);
-  margin-top: -50px;
+  width: 100%;
+  height: auto;
 }
 
 .image img {
@@ -82,9 +114,34 @@ p {
   height: auto;
 }
 
+@media (min-width: 900px) {
+  .col-1 {
+    width: calc(40% - 20px);
+  }
+  .col-2 {
+    width: calc(60% - 20px);
+  }
+
+  h6 {
+    margin-bottom: 25px;
+  }
+
+  .desc {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ingredients {
+    margin-block: 60px;
+  }
+}
+
 .wrapper {
   padding: 50px 130px;
   max-width: 1500px;
+  width: 100%;
+  position: relative;
   margin: 0 auto;
 }
 
@@ -96,7 +153,7 @@ p {
 
 @media (max-width: 800px) {
   .wrapper {
-    padding: 40px;
+    padding: 20px;
   }
 }
 
@@ -105,7 +162,7 @@ p {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
@@ -126,40 +183,21 @@ p {
 
 .selectionNavi li {
   list-style: none;
+  width: calc(50% - 25px);
+  margin-bottom: 50px;
+}
+
+.selectionNavi li .shadow {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .selectionNavi:not(.big) li {
-  max-width: calc(33% - 33.3px);
-  margin-right: 50px;
-}
-
-
-
-
-.selectionNavi:not(.big) li:nth-child(3n+3) {
-  margin-right: 0;
-}
-.selectionNavi.big li {
-  max-width: calc(50% - 50px);
-}
-
-.selectionNavi.big li:first-of-type {
-  margin-right: 100px;
-}
-
-@media (max-width: 1000px) {
-  .selectionNavi.big li {
-    max-width: calc(50% - 20px);
-  }
-  .selectionNavi.big li:first-of-type {
-    margin-right: 40px;
-  }
+  width: calc(33% - 25px);
 }
 
 .selectionNavi .btn {
   text-decoration: none;
   position: relative;
-  padding-right: 70px;
   display: block;
 }
 
@@ -175,7 +213,7 @@ p {
   line-height: 50px;
   display: block;
   margin-bottom: 15px;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 .selectionNavi .btn .counter {
   font-family: Playfair Display;
@@ -183,67 +221,55 @@ p {
   font-weight: normal;
   font-size: 26px;
   line-height: 40px;
-  transform-origin: left bottom;
-  transform: rotate(-90deg);
   white-space: nowrap;
-  position: absolute;
-  bottom:50px;
-  left: 100%;
-  width: 400px;
-  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  color: #ffffff;
   padding: 15px 30px;
   background: #2c2c2c;
 }
 
 .selectionNavi .btn img {
- height: 460px;
+  height: 460px;
+  display: block;
 }
 .selectionNavi .btn video {
   height: 630px;
+  display: block;
 }
 
-.selectionNavi .btn img, .selectionNavi .btn video {
+.selectionNavi .btn img,
+.selectionNavi .btn video {
   width: 100%;
   object-fit: cover;
   position: relative;
   object-position: center center;
-  box-shadow: 0px 10px 15px rgba(0,0,0,.3);
 }
 
 .selectionNavi .btn.overlay:after {
-  width: calc(100% - 70px);
+  width: 100%;
   height: 630px;
-  background: rgba(0,0,0, .4);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
-  left:0;
-  bottom:4px;
-  content: "";
+  left: 0;
+  bottom: 70px;
+  content: '';
 }
 
 @media (max-width: 1000px) {
-  .selectionNavi .btn {
-    padding-right: 50px;
-  }
   .selectionNavi .btn .counter {
     padding: 5px 10px;
     font-size: 22px;
   }
   .selectionNavi .btn.overlay:after {
-    width: calc(100% - 50px);
+    bottom: 50px;
   }
-
   .selectionNavi:not(.big) {
     flex-flow: row wrap;
   }
+
   .selectionNavi:not(.big) li {
-    max-width: calc(50% - 25px);
-    margin-bottom: 20px;
-  }
-  .selectionNavi:not(.big) li:nth-child(3n+3) {
-    margin-right: 50px;
-  }
-  .selectionNavi:not(.big) li:nth-child(2n+2) {
-    margin-right: 0px;
+    width: calc(50% - 25px);
   }
 }
 
@@ -265,28 +291,16 @@ p {
   .selectionNavi:not(.big) li {
     max-width: 100%;
   }
-  .selectionNavi:not(.big) li:nth-child(3n+3) {
-    margin-right: 0px;
-  }
   .selectionNavi.big li {
-    max-width: 100%;
-  }
-  .selectionNavi.big li:first-of-type {
-    margin-right: 0px;
-    margin-bottom: 20px;
+    width: 100%;
   }
   .selectionNavi:not(.big) li {
-    margin-right: 0px;
-    margin-bottom: 20px;
+    width: 100%;
   }
   .selectionNavi .btn video {
-    max-height: calc(50vh - 135px)
+    max-height: calc(50vh - 135px);
   }
   .selectionNavi .btn.overlay:after {
-    max-height: calc(50vh - 135px)
-  }
-  .selectionNavi .btn .counter {
-    bottom: 4px;
-    width: 165px;
+    max-height: calc(50vh - 135px);
   }
 }

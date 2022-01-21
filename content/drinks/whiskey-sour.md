@@ -15,7 +15,7 @@ description: >-
 
 
   Zitronenzeste mit der Schale nah an den Cocktail halten und knicken, dann ins Glas geben.
-cover: ""
+cover: /img/download.jpg
 info: |-
   Alternativen:
 

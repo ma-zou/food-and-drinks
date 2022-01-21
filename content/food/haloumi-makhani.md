@@ -2,9 +2,7 @@
 category:
   - hauptgericht
 title: Haloumi Makhani
-description: Butterchicken ohne Chicken
-cover: /img/dsc_0029-16.jpg
-info: Zuerst den Haloumi in mundgerechte Würfel schneiden. Dann die
+description: Zuerst den Haloumi in mundgerechte Würfel schneiden. Dann die
   Ingwer-Knoblauch-Paste zubereiten. Dafür den Ingwer und den Knoblauch schälen
   und mit etwas Wasser pürieren. Den Haloumi dann mit dem Rapsöl in eine große,
   tiefe Pfanne geben und die restlichen Zutaten hinzufügen und anbraten. Den
@@ -14,16 +12,16 @@ info: Zuerst den Haloumi in mundgerechte Würfel schneiden. Dann die
   ganze Masse glatt pürieren. Die Soße und den Haloumi nun wieder gemeinsam in
   die Pfanne geben und leicht köcheln lassen. Mit Essig, Salz und Kasoori Methi
   abschmecken, eventuell mit Wasser verdünnen und mit Basmati-Reis servieren.
+cover: /img/dsc_0029-16.jpg
+info: Butterchicken ohne Chicken
 ---
-## Zutaten
+### Zutaten
 
 * 2 Pk. Haloumi oder Paneer 
 * 2 EL Ingwer-Knoblauch-Paste 
 * 2 EL Rapsöl 
 
-
-
-## Curry
+### Curry
 
 * 600 gTomaten 
 * 1 EL Ingwer-Knoblauch-Paste 
@@ -38,7 +36,7 @@ info: Zuerst den Haloumi in mundgerechte Würfel schneiden. Dann die
 * Salz nach Geschmack
 * 1 TL Kasoori Methi
 
-## Ingwer-Knoblauch-Paste
+### Ingwer-Knoblauch-Paste
 
 * 80 g Ingwer 
 * 7 Zehen Knoblauch 

@@ -14,6 +14,7 @@ description: Zuerst den Haloumi in mundgerechte Würfel schneiden. Dann die
   abschmecken, eventuell mit Wasser verdünnen und mit Basmati-Reis servieren.
 cover: /img/dsc_0029-16.jpg
 info: Butterchicken ohne Chicken
+amount: 4
 ---
 ### Zutaten
 

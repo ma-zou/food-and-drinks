@@ -1,7 +1,7 @@
 ---
 category:
   - suesses
-title: Bananabread
+title: Bananenbrot
 cover: /img/banana-bread.jpg
 ---
 - 4 Bananen
